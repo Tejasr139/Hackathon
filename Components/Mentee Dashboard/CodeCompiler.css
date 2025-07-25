@@ -1,0 +1,124 @@
+/* Editor textarea */
+.code-box {
+  font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #1e1e2f;   /* dark blueish background */
+  color: #d4d4d4;              /* soft light text */
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  resize: vertical;
+  min-height: 300px;
+  transition: box-shadow 0.3s ease;
+  outline: none;
+}
+
+.code-box:focus {
+  box-shadow: 0 0 10px #4e90ff;
+  background-color: #2a2a40;
+}
+
+/* Output area */
+.code-box {
+  /* existing styles... */
+  font-family: 'Fira Code', Consolas, Monaco, 'Courier New', monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #1e1e2f;
+  color: #d4d4d4;
+  border: none;
+  border-radius: 8px;
+  padding: 15px 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  resize: vertical;
+  min-height: 300px;
+  transition: box-shadow 0.3s ease;
+  outline: none;
+
+  /* Fix caret and selection */
+  caret-color: #4a90e2; /* visible caret */
+}
+
+.code-box {
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* When textarea is focused */
+.code-box:focus {
+  box-shadow: 0 0 10px #4e90ff;
+  background-color: #2a2a40;
+  color: #f0f0f0; /* lighter text on focus */
+}
+
+/* Text selection background & color */
+.code-box::selection {
+  background: #4a90e2;
+  color: #ffffff;
+}
+
+
+/* Container card */
+.card-body {
+  background: linear-gradient(145deg, #f7f8fc, #e4e7f2);
+  border-radius: 12px;
+  padding: 40px;
+  box-shadow:
+    4px 4px 10px rgba(163, 177, 198, 0.6),
+    -4px -4px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Button */
+.run-btn {
+  background: #4a90e2;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 14px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  box-shadow: 0 6px 12px rgba(74, 144, 226, 0.6);
+}
+
+.run-btn:hover {
+  background: #357ABD;
+  box-shadow: 0 8px 15px rgba(53, 122, 189, 0.8);
+}
+
+/* Dropdown */
+.form-select {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-weight: 500;
+  box-shadow: inset 2px 2px 5px #d0d3db,
+              inset -2px -2px 5px #ffffff;
+  transition: border-color 0.25s ease;
+}
+
+.form-select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 8px #4a90e2;
+  outline: none;
+}
+
+/* Labels */
+label {
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 8px;
+  display: block;
+  font-size: 1.1rem;
+}
+
+/* Heading */
+h2 {
+  color: #34495e;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
